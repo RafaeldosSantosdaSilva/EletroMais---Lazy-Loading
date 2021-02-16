@@ -1,0 +1,163 @@
+.categories {
+    margin: 2em;
+}
+
+.categories h3 {
+    font-size: .9em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.categoriesButtons {
+    background-color: #222222;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: .7em;
+    font-size: .7em;
+    padding: 1em .3em;
+    margin: .2em;
+    transition: .5s;
+    outline: none;
+}
+
+.categoriesButtons:hover {
+    background-color: #333333;
+}
+
+.categoriesButtons:link, .categoriesButtons:visited {
+    border: 1px solid #773ADC;
+}
+
+.productSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productCards h3 {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .7em;
+    margin-top: 1em;
+}
+
+.productCards {
+    display: block;
+    width: 10.5em;
+    height: 18em;
+    background-color: #ffffff;
+    border-radius: .7em;
+    margin: .5em auto;
+    color: #111111;
+    border: .2em solid transparent;
+    transition: .5s;
+    overflow: auto;
+}
+
+.productCards:hover {
+    border: .2em solid #773ADC;
+}
+
+.productCards .oldPrice {
+    text-decoration: line-through;
+    font-size: .9em;
+    margin-bottom: .5em;
+}
+
+.productCards .newPrice {
+    color: #ff0000;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.productCards img {
+    width: 100px;
+}
+
+.productCards button {
+    border: none;
+    border-radius: .5em;
+    padding: .5em .8em;
+    font-size: 1.1em;
+    background-color: #80e98e;
+    text-transform: lowercase;
+    margin-bottom: -.2em;
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.productCards button:hover {
+    background-color: #1ef33a;
+}
+
+@media (min-width: 1100px) {
+
+    .productContainer {
+        display: flex;
+        margin-top: 4em;
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+        max-width: 18%;
+    }
+
+    .categories h3 {
+        font-size: 1.2em;
+    }
+
+    .categoriesButtons {
+        cursor: pointer;
+        margin: .3em auto;
+        width: 100%;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+
+    .productSection {
+        width: 82%;
+        margin: 0 auto;
+    }
+
+    .productCards {
+        margin: 1em .6em;
+        width: 17.5em;
+        height: 23em;
+        border: .4em solid transparent;
+    }
+
+    .productCards:hover {
+        border: .4em solid #72dceb;
+    }
+
+    .productCards h3 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .productCards .oldPrice {
+        font-size: 1.1em;
+        letter-spacing: .1em;
+        margin-bottom: -.3em;
+    }
+
+    .productCards .newPrice {
+        font-size: 1.5em;
+        letter-spacing: .1em;
+        margin-bottom: -.1em;
+    }
+
+    .productCards img {
+        cursor: zoom-in;
+        width: 140px;
+    }
+
+    .productCards button {
+        margin-top: .3em;
+        font-size: 1.4em;
+    }
+}

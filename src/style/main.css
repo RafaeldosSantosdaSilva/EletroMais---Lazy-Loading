@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+
+body {
+  background: #e9e9e9;
+  color: #1d1515;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding: 0 2%;
+  font-family: Saira, sans-serif;
+}
+
+/* Página Principal */
+.welcomeTitle {
+  margin: 1em 0;
+}
+
+.offerSection h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+.offerCards {
+  background-color: #ffffff;
+  border-radius: 2em;
+  width: 80%;
+  margin: 0.5em auto;
+  color: #111111;
+  border: 0.4em solid transparent;
+  transition: 0.5s;
+}
+
+.offerCards:hover {
+  border: 0.4em solid #3adc63;
+}
+
+.offerCards .oldPrice {
+  text-decoration: line-through;
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+.offerCards .newPrice {
+  font-size: 1.5em;
+  color: #ff0000;
+  font-weight: 600;
+  margin-bottom: .5em;
+}
+
+.offerCards img {
+  width: 140px;
+  cursor: zoom-in;
+}
+
+.offerCards button {
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.7em 1.5em;
+  font-size: 1.3em;
+  background-color: #36d199;
+  text-transform: lowercase;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+
+.offerCards button:hover {
+  background-color: #40f18a;
+}
+
+/* Página lojas */
+.stores {
+  margin-top: 4em;
+}
+
+.stores .storeCards {
+  padding: 0.5em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #222222;
+  transition: 0.5s;
+}
+
+.stores .storeCards:hover {
+  background-color: #222222;
+}
+
+.stores .storeCards:last-child {
+  border-bottom: 1px solid transparent;
+}
+
+.stores .storeCards img {
+  width: 240px;
+  border-radius: 1em;
+}
+
+/* Página contato */
+
+.contact {
+  display: inline-block;
+  margin: 1em 0.2em;
+  padding: 0.2em;
+  transition: 0.5s;
+  border-radius: 0.7em;
+  border: 1px solid transparent;
+}
+
+.contact:hover {
+  border: 1px solid #a5ebee;
+}
+
+.contact i {
+  font-size: 2.5em;
+}
+
+.contact p {
+  font-size: 1em;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9em;
+}
+
+.contactForm label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.contactForm input:focus, .contactForm textarea:focus {
+  box-shadow: 0 0 0px 3px #4df184;
+}
+
+.contactForm input {
+  width: 80%;
+  margin: .4em auto  1.2em;
+  border-radius: 0.2em;
+  height: 1.5em;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.contactForm textarea {
+  resize: none;
+  outline: none;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1.1em;
+  margin: 0 0.7em;
+  padding: 0.3em;
+}
+
+.buttonContact {
+  display: block;
+  width: 7em;
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.3em;
+  background-color: #70e2f7;
+  transition: 0.5s;
+}
+
+.buttonContact:hover {
+  background-color: #38ee75;
+}
+
+.messages hr {
+  margin: 0;
+  width: 100%;
+}
+
+.messages h5 {
+  text-align: left;
+}
+
+@media (min-width: 940px) {
+  body {
+    padding: 0 15%;
+  }
+
+  /* Página principal */
+  .offerSection {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .offerSection h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .offerCards {
+    width: 22rem;
+    height: 25em;
+    padding: 1em 0;
+  }
+
+  .offerCards img {
+    width: 180px;
+    transition: 1s;
+  }
+
+  .offerCards img:hover {
+    opacity: 0.6;
+    cursor: zoom-in;
+  }
+
+  .offerCards .oldPrice {
+    font-size: 1.1em;
+    margin-bottom: -.3em;
+  }
+
+  .offerCards .newPrice {
+    font-size: 1.5em;
+    margin-bottom: -.1em;
+  }
+
+  .offerCards button {
+    margin-top: 0.6em;
+  }
+
+  /* Página page-lojas.html */
+  .box {
+    display: flex;
+    flex-direction: initial;
+    margin: 2em auto 0;
+    justify-content: center;
+  }
+
+  .box .loja-box {
+    border-bottom: none;
+    margin: 0 2em;
+  }
+
+  .box .loja-box img {
+    max-width: 100%;
+  }
+
+  .loja-box {
+    width: 85%;
+  }
+
+  /* Página contato */
+  .contact {
+    margin: 1em 10em;
+  }
+
+  .contact u {
+    font-size: 3em;
+    color: #12ac1f;
+  }
+  .contact i {
+    font-size: 3em;
+    color: #82c7f5;
+  }
+
+  .contact p {
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+  }
+
+  .contactForm {
+    display: inline-block;
+  }
+
+  .contactForm input {
+    width: 65%;
+    height: 1.8em;
+    font-size: 1.2em;
+  }
+
+  .contactForm textarea {
+    font-size: 1.3em;
+  }
+}
